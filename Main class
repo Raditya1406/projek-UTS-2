@@ -1,0 +1,37 @@
+package com.tutorial;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+    	int input;
+	hitungBangun hitungBangun = new hitungBangun();
+	persegi persegi = new persegi(5);
+	segitiga segitiga=new segitiga(2,8);
+	lingkaran lingkaran = new lingkaran(7);
+Scanner x = new Scanner(System.in);
+
+	hitungBangun.luas();
+	System.out.println("=============================== ");
+	System.out.println("||  Program menghitung bangun|| ");
+	System.out.println("=============================== ");
+	System.out.println(" 1.Persegi ");
+	System.out.println(" 2.Segitiga ");
+	System.out.println(" 3.Lingkaran ");
+	System.out.println("=============================== ");
+	System.out.println("Bangun yang ingin dihitung : ");
+	 input=x.nextInt();
+			if (input==1) {
+				System.out.println("luas Persegi adalah :" + persegi.luas());
+			}
+			else if (input==2){
+				System.out.println("luas segitiga adalah :" + segitiga.luas());
+			}
+			else if(input==3){
+				System.out.println("luas lingkaran adalah :" + lingkaran.luas());
+			}
+    }
+			}
+
+
+
+
