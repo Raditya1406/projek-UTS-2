@@ -1,0 +1,18 @@
+package com.tutorial;
+
+
+    public class lingkaran extends hitungBangun{
+ int jariJari;
+float hasil;
+    public lingkaran(int jariJari) {
+        this.jariJari = jariJari;
+    }
+
+
+    @Override
+    public float luas() {
+        hasil = (float) (jariJari*jariJari*3.14);
+        return hasil;
+    }
+}
+
