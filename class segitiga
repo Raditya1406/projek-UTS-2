@@ -1,0 +1,16 @@
+package com.tutorial;
+
+public class segitiga extends hitungBangun{
+    int alas;
+    int tinggi;
+    int hasil;
+    public segitiga(int alas,int tinggi){
+        this.alas=alas;
+        this.tinggi=tinggi;
+    }
+    @Override
+    public float luas(){
+        hasil=this.alas*this.tinggi/2;
+        return hasil;
+    }
+}
